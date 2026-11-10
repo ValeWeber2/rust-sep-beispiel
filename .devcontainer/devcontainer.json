@@ -1,0 +1,16 @@
+{
+    "name": "Beispiel Dev",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer"
+            ]
+        }
+    },
+    "workspaceFolder": "/workspaces/Beispiel",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/Beispiel,type=bind"
+}
